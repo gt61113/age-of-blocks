@@ -125,13 +125,7 @@ La liaison se fait en direct entre les deux appareils quand c'est possible, sino
 
 La partie solo est enregistrée automatiquement dans le navigateur. Le bouton **Reprendre la partie** apparaît à l'accueil. Vider les données du navigateur efface la sauvegarde.
 
-## Mettre le jeu en ligne (GitHub Pages)
 
-1. Dans le dépôt, ouvrir **Settings → Pages**.
-2. Sous *Build and deployment*, choisir **Deploy from a branch**, branche **main**, dossier **/ (root)**, puis **Save**.
-3. Après une minute ou deux, le jeu est jouable à l'adresse https://gt61113.github.io/age-of-blocks/
-
-On peut aussi télécharger `index.html` et l'ouvrir directement dans un navigateur.
 
 ## Côté technique
 
