@@ -29,12 +29,13 @@ La nourriture vient des buissons à baies, des champs, de la chasse et de l'éle
 
 ## L'écran d'accueil
 
-![Écran d'accueil : mode de jeu, difficulté, taille de carte, paysage, couleur et son](docs/accueil.png)
+![Écran d'accueil : mode de jeu, niveau de l'ordinateur, taille de carte, paysage, couleur et son](docs/accueil-ia.png)
 
-*Tout se règle avant la partie.*
+*Tout se règle avant la partie. Ici, le mode « Contre l'ordinateur » est choisi, avec le niveau de l'IA.*
 
-- **Mode de jeu** : solo libre ou à deux (chacun sur son téléphone). Le mode contre l'IA n'existe pas encore.
-- **Difficulté** : la quantité qu'un ouvrier rapporte par trajet (10 en facile, 5 en normal, 1 en difficile). Elle ne se change plus une fois la partie lancée.
+- **Mode de jeu** : solo libre, **contre l'ordinateur** ou à deux (chacun sur son téléphone).
+- **Difficulté** (solo libre et à deux) : la quantité qu'un ouvrier rapporte par trajet (10 en facile, 5 en normal, 1 en difficile). Elle ne se change plus une fois la partie lancée.
+- **Niveau de l'ordinateur** (mode contre l'IA) : facile, normal ou difficile. Plus il est fort, plus il se développe vite et plus il attaque tôt (vers 14, 10 ou 7 minutes).
 - **Taille de carte** : petite (48 × 48), moyenne (64 × 64) ou grande (80 × 80).
 - **Paysage** : forêt, désert, neige ou îles.
 - **Couleur du joueur** : six couleurs, visibles sur les toits, les drapeaux et les vêtements.
@@ -80,6 +81,7 @@ Dans **Paramètres**, deux réglages :
 | Porte | 10 bois, 5 pierre | Laisse passer tes ouvriers | outils en bois |
 | Tour | 10 bois, 25 pierre | Tire des flèches sur les ennemis à portée | outils en bois |
 | Mine | 60 bois, 60 pierre | Dépôt de fer et de diamant | outils en pierre |
+| Écurie | 100 bois, 40 pierre | Forme les cavaliers | outils en pierre |
 | **Merveille** | 300 bois, 300 pierre, 200 fer, 150 diamant | La terminer, c'est gagner | outils en fer |
 
 La population est limitée à 50 habitants.
@@ -91,8 +93,13 @@ La population est limitée à 50 habitants.
 | Ouvrier | 50 nourriture | Centre | Récolte, bâtit, chasse, élève |
 | Fantassin | 40 nourriture, 20 bois | Caserne | Bâton et bouclier ; armure de fer et épée après amélioration (100 fer, 50 bois) |
 | Archer | 30 nourriture, 30 bois, 10 fer | Caserne (outils en pierre) | Tire à distance |
+| Cavalier | 60 nourriture, 30 bois, 20 fer | Écurie (outils en pierre) | Rapide et robuste, il frappe deux fois plus fort les archers |
 | Promeneur | 60 nourriture | Centre (outils en pierre) | Explore la carte tout seul |
 | Gardien de fer | 200 fer, 100 pierre | Forge (outils en pierre) | Un seul par village, il patrouille et le protège |
+
+![Des cavaliers et quelques fantassins et archers devant l'écurie et la caserne](docs/cavalerie.png)
+
+*Des cavaliers (à cheval) prêts au combat, aux côtés de fantassins et d'archers.*
 
 ## Les dangers
 
@@ -110,6 +117,10 @@ La population est limitée à 50 habitants.
 | ![Désert](docs/biome-desert.png) | ![Neige](docs/biome-neige.png) | ![Îles](docs/biome-iles.png) |
 
 Chaque paysage change les couleurs, mais aussi la quantité d'eau, de forêt, de rochers et de loups.
+
+## Contre l'ordinateur
+
+Choisis **Contre l'ordinateur** sur l'écran d'accueil, puis le niveau de l'IA. L'ordinateur développe son propre village, récolte, construit, forme une armée et finit par attaquer. Pour gagner, détruis son centre du village ou termine ta Merveille avant lui. Plus le niveau est élevé, plus il se développe vite et plus son attaque arrive tôt.
 
 ## Jouer à deux
 
@@ -139,7 +150,7 @@ La partie solo est enregistrée automatiquement dans le navigateur. Le bouton **
 
 | Fichier | Contenu |
 |---|---|
-| `index.html` | Le jeu complet (version 3.1) |
+| `index.html` | Le jeu complet (version 4) |
 | `docs/logo.svg` | Le logo |
 | `docs/*.png` | Les captures d'écran de cette page |
 
@@ -149,6 +160,7 @@ La partie solo est enregistrée automatiquement dans le navigateur. Le bouton **
 - **v2** : écran d'accueil et logo, paysages, brouillard de guerre, tailles de carte, difficulté, loups, tours qui tirent, enclos.
 - **v3** : caserne, fantassins, archers, promeneur, gardien de fer, cabanes de zombies.
 - **v3.1** : jeu à deux, musique et bruitages.
+- **v4** : mode contre l'ordinateur (IA avec trois niveaux), écurie et cavaliers.
 
 ---
 
