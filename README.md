@@ -59,10 +59,20 @@ La nourriture vient des buissons à baies, des champs, de la chasse et de l'éle
 | Construire | Menu Bâtiments, placer le plan, Valider | Idem |
 | Sélectionner l'armée | Bouton Armée, ou double appui sur un soldat | Idem, ou Maj + glisser pour encadrer |
 
-Dans **Paramètres**, deux réglages :
+Après avoir validé une construction (ou posé une série de murs), le menu des Bâtiments se rouvre tout seul pour enchaîner. Quand tu sélectionnes un bâtiment déjà construit, tu peux le **réparer**, le **démolir** (bouton tout en bas du panneau, à confirmer — tu récupères la moitié des ressources) et, pour la caserne et l'écurie, lui donner un **point de ralliement** où les nouvelles unités se rendront.
+
+Quand un ouvrier ou un bâtiment est attaqué, un bouton **⚠ Alerte** apparaît et recentre la vue sur l'endroit de l'attaque.
+
+### Paramètres
+
+<p align="center">
+  <img src="docs/parametres.png" alt="Menu Paramètres : commande des ouvriers, réaction, son et vitesse de jeu" width="320">
+</p>
 
 - **Commande des ouvriers** : automatique (l'ouvrier libre le plus proche y va) ou manuelle (un ouvrier, puis sa cible).
 - **Ouvrier attaqué** : se défendre avec son outil, ou fuir se réfugier au village.
+- **Vitesse de jeu** (en solo) : Pause, Normal ou Rapide.
+- **Son** : musique et effets sonores.
 
 ## Les bâtiments
 
@@ -77,8 +87,8 @@ Dans **Paramètres**, deux réglages :
 | Carrière | 80 bois | Dépôt de pierre | outils en bois |
 | Moulin | 60 bois, 40 pierre | Dépôt de nourriture, +50 % pour les champs voisins | outils en bois |
 | Caserne | 80 bois, 60 pierre | Forme les soldats | outils en bois |
-| Rempart | 5 pierre par case | Bloque le passage | outils en bois |
-| Porte | 10 bois, 5 pierre | Laisse passer tes ouvriers | outils en bois |
+| Rempart | 5 pierre par case | Bloque le passage de tous | outils en bois |
+| Porte | 10 bois, 5 pierre | Laisse passer tes unités, bloque les ennemis | outils en bois |
 | Tour | 10 bois, 25 pierre | Tire des flèches sur les ennemis à portée | outils en bois |
 | Mine | 60 bois, 60 pierre | Dépôt de fer et de diamant | outils en pierre |
 | Écurie | 100 bois, 40 pierre | Forme les cavaliers | outils en pierre |
@@ -150,7 +160,7 @@ La partie solo est enregistrée automatiquement dans le navigateur. Le bouton **
 
 | Fichier | Contenu |
 |---|---|
-| `index.html` | Le jeu complet (version 4) |
+| `index.html` | Le jeu complet (version 5) |
 | `docs/logo.svg` | Le logo |
 | `docs/*.png` | Les captures d'écran de cette page |
 
@@ -161,6 +171,7 @@ La partie solo est enregistrée automatiquement dans le navigateur. Le bouton **
 - **v3** : caserne, fantassins, archers, promeneur, gardien de fer, cabanes de zombies.
 - **v3.1** : jeu à deux, musique et bruitages.
 - **v4** : mode contre l'ordinateur (IA avec trois niveaux), écurie et cavaliers.
+- **v5** : les portes bloquent les ennemis, démolition et réparation des bâtiments, point de ralliement, bouton d'alerte, pause et vitesse de jeu, chiffres plus lisibles, joueurs plus éloignés au départ.
 
 ---
 
